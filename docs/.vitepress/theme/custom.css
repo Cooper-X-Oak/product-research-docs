@@ -73,12 +73,37 @@
 }
 
 .vp-doc table {
-  font-size: 14px;
+  display: table;
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.vp-doc th,
+.vp-doc td {
+  min-width: 0;
+  max-width: 22rem;
+  vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .vp-doc th {
   background: rgba(15, 111, 115, 0.08);
   color: var(--vp-c-text-1);
+}
+
+.vp-doc td {
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc td code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .vp-doc code {
