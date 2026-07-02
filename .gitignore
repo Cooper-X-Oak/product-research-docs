@@ -1,0 +1,17 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+dist/
+.DS_Store
+*.log
+
+# Local legacy drafts excluded from the published research-report structure
+docs/research/appendix/
+docs/research/mvp/
+docs/research/final_report.md
+docs/research/overview.md
+
+# Sensitive local context
+chatrecord_*.md
+docs/context/
+research/00_context/
